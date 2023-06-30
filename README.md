@@ -9,3 +9,6 @@ IDE: junta a função do código fonte, um editor de texto e junta com a máquin
 Programa: é a materialização de um algoritmo 
 <nome do arquivo>.cpp : código fonte
 <nome do arquivo>.exe : programa
+int: inteiros
+float: números "quebrados"
+Possibilidade de utilizar virgulas entre variaveis com tipo iguais.
