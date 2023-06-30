@@ -7,3 +7,5 @@ Para fazer um código fonte basta um editor de texto ou uma IDE, que irar compil
 IDE: junta a função do código fonte, um editor de texto e junta com a máquina.
 %d formatação para o valor de um inteiro
 Programa: é a materialização de um algoritmo 
+<nome do arquivo>.cpp : código fonte
+<nome do arquivo>.exe : programa
