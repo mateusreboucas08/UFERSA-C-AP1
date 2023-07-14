@@ -10,16 +10,15 @@ int main() {
   scanf("%d", &z);
   if((x<y+z) && (y<x+z) && (z<x+y)){
     printf("É um triângulo\n");
+    if ((x = y) && (x = z) && (y != z) ){
+  		printf("É um triângulo isóceles");
+  	}else if ((x != y) && (x != z) && (y != z)){
+  		printf("É um triângulo escaleno");
+  	}else{
+  		printf("É um triângulo equilátero");
+	}
   }else{
     printf("Não é um triângulo\n");
   }
-  if ((x = y) && (x = z) && (y != z) ){
-  	printf("É um triângulo isóceles");
-  }else if ((x != y) && (x != z) && (y != z)){
-  	printf("É um triângulo escaleno");
-  }else{
-  	printf("É um triângulo equilátero");
-  }
   return 0;
 }
-
