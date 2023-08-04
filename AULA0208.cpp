@@ -63,7 +63,27 @@ int main(){
 		i++;
 	}
 }
-
+#include <stdio.h>
+#include <locale>
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int num, i, qtdDivisores;
+	scanf("%d", &num);
+	i=1;
+	qtdDivisores = 0;
+	while(i <= num){
+		if (num%i == 0){
+			qtdDivisores++;
+		}
+		i++;
+	}
+	if (qtdDivisores == 2){
+		printf("%d é primo",num);
+	}else{
+		printf("%d não é primo",num);
+	}
+	return 0;
+}
 ////// Laço For //////
 
 
