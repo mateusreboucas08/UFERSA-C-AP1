@@ -109,6 +109,26 @@ int main(){
 	return 0;
 
 }
+#include <stdio.h>
+#include <locale>
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int a,r,i,valor;
+	printf("Digite o valor do primeiro índice: ");
+	scanf("%d", &a);
+	printf("Digite o valor da razão da progressão: ");
+	scanf("%d", &r);
+	printf("Digite qual o valor da posição: ");
+	scanf("%d", &i);
+	int PA;
+	valor=1;
+	while(valor<=i){
+		PA = a + ((valor-1)*r);
+		printf("O %dº termo da PA é igual a %d\n",valor,PA);
+		valor++;
+	}
+	return 0;
+}
 ////// Laço For //////
 
 
