@@ -84,6 +84,31 @@ int main(){
 	}
 	return 0;
 }
+#include <stdio.h>
+#include <locale>
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int opcao;
+	float preco, total;
+	printf("Digite uma opção:\n");
+	printf("1 - Digitar valores;\n");
+	printf("0 - sair.\n")/
+	scanf("%d", &opcao);
+	total = 0.0
+	while(opcao == 1){
+		printf("Digire o preço do produto\n");
+		scanf("%f",preco)
+		total = total + preco;
+		printf("Digite uma opção:\n");
+		printf("1 - Digitar valores;\n");
+		printf("0 - sair.\n")/
+		scanf("%d", &opcao);
+	}
+	printf("O total da compra é de R$ %.2f", total);
+	
+	return 0;
+
+}
 ////// Laço For //////
 
 
