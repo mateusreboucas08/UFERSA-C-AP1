@@ -129,6 +129,42 @@ int main(){
 	}
 	return 0;
 }
+#include <stdio.h>
+#include <locale>
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int l, i,j;
+	printf("Digite o valor do lado do quadrado: ");
+	scanf("%d",&l);
+	i=1;
+	while(i<=l){
+		j = 1;
+		while(j<=l){
+			printf("*");
+			j++;
+		}
+		printf("\n");
+		i++;
+	}
+	return 0;
+}
+#include <stdio.h>
+#include <locale>
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int num, i, fat;
+	printf("Digite um número: ");
+	scanf("%d",&num);
+	i=1;
+	fat = 1;
+	while(i<=num){
+		printf("O primeiro termo a ser multiplicado é %d\n",i);
+		fat = fat*i;
+		i++;
+	}
+	printf("O valor do fatorial do número %d é igual a %ld.",num,fat);
+	return 0;
+}
 ////// Laço For //////
 
 
