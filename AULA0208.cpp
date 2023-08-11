@@ -165,6 +165,74 @@ int main(){
 	printf("O valor do fatorial do número %d é igual a %ld.",num,fat);
 	return 0;
 }
-////// Laço For //////
+////// Laço Do While //////
 
+#include <stdio.h>
+#include <locale>
 
+int main(){
+	int i = 1;
+	do{
+		printf("%d ",i);
+		i++;
+	}while(i<=10000);
+	return 0;
+}
+#include <stdio.h>
+#include <locale>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int num, qtdeMultiplos, i;
+	printf("Digite um número inteiro: ");
+	scanf("%d", &num);
+	printf("Digite a quantidade de múltiplos de %d que você deseja imprimir: ",num);
+	scanf("%d", &qtdeMultiplos);
+	i = 1;
+	do{
+		printf("%d ", num * i);
+		i++;
+	}while(i <= qtdeMultiplos);
+	return 0;
+}
+
+#include <stdio.h>
+#include <locale>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int num, i;
+	printf("Digite um número inteiro: ");
+	scanf("%d", &num);
+	i = 1;
+	do {
+		if(num % i == 0){
+			printf("%d ",i);
+		}
+		i++;
+	}while(i<=num);
+	return 0;
+}
+
+#include <stdio.h>
+#include <locale>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int num, i, qtdeDivisores;
+	printf("Digite um número inteiro: ");
+	scanf("%d", &num);
+	i = 1;
+	qtdeDivisores = 0;
+	do {
+		if(num & i == 0){
+			qtdeDivisores++;
+		}
+	}while(i<=num);
+	if (qtdeDivisores == 2){
+		printf("%d é primo", num);
+	}else{
+		printf("%d não é primo",num);
+	}
+	return 0;
+}
