@@ -236,3 +236,61 @@ int main(){
 	}
 	return 0;
 }
+
+///////////Laço For//////////////
+
+#include<stdio.h>
+#include<locale>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int num, qtdeMultiplos;
+	printf("Digite um número: ");
+	scanf("%d", &num); 
+	printf("Digite a quantidade de múltiplos de %d que você deseja imprimir: ", num);
+	scanf("%d", &qtdeMultiplos);
+	for(int i = 1; i <= qtdeMultiplos; i++){
+		printf("%d ", num * i);
+	}
+	return 0;
+}
+
+#include<stdio.h>
+#include<locale>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int num;
+	printf("Digite um número: ");
+	scanf("%d", &num); 
+	for(int i = 1; i <= num; i++){
+		if (num % i == 0){
+			printf("%d ", i);
+		}
+	}
+	return 0;
+}
+#include<stdio.h>
+#include<locale>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int num,qtdeDivisores;
+	printf("Digite um número: ");
+	scanf("%d", &num); 
+	for(int i = 1; i <= num; i++){
+		if (num % i == 0){
+			printf("%d ", i);
+			qtdeDivisores ++;
+		}
+	}
+	if(qtdeDivisores ==2 ){
+			printf("Esse número é primo");
+		}else{
+			printf("Esse número não é primo");
+		}
+	return 0;
+}
