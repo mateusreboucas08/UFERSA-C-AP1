@@ -294,3 +294,49 @@ int main(){
 		}
 	return 0;
 }
+
+/////////////////Sequência de Fibonacci///////////////////
+#include <stdio.h>
+#include <locale>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int a,b,aux,qtde;
+	a=1;
+	b=1;
+	scanf("%d",&qtde);
+	for(int i = 1; i<=qtde; i++) {
+		if(i==1||i==2){
+			printf("1 ");
+		}else{
+			aux=b;
+			b=a+b;
+			printf("%d", b);
+			a=aux;
+		}
+	}
+}
+
+#include <stdio.h>
+#include <locale>
+
+#include <stdio.h>
+#include <locale>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	float popA, popB;
+	popA=80;
+	popB=200;
+	int tempo= 1;
+	while(1){
+		popA = 1.03 * popA;
+		popB = 1.015 * popB;
+		printf("Ano %d\tPopulação de A: %.2f\tPopulação de B: %.2f\n", tempo, popA, popB);
+		tempo++;
+		if(popA>popB){
+			break;
+		}
+	}
+	printf("Depois de %d anos, a população da cidade A irá ultrapassar o valor da cidade B",tempo);
+}
